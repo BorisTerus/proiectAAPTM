@@ -29,6 +29,7 @@ public class GradientDescent {
         return returnValue;
     }
 
+
     private Matrix logistic(Matrix ws) {
         return ws.exp().oneOver().scalarOperation(1, Matrix.ScalarOperation.ADD).oneOver();
     }
